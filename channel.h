@@ -13,6 +13,7 @@ public:
     {
         CHANNEL_LOAD = 0x81D0,      // sample load instructions
         CHANNEL_STORE = 0x82D0,     // sample store instructions
+        CHANNEL_L3Miss = 0x20D1,    // L3_Load_Miss，此數值參考自Intel Programming Manual，不同處理器型號可能有所不同。
     };
 
     struct Sample
