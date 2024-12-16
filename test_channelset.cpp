@@ -42,7 +42,7 @@ int main(int argc, char* argv[])
     size_t total = 0;
     while(true)
     {
-        ssize_t ret = cs.pollSamples(1000, NULL, on_sample);
+        ssize_t ret = cs.pollSamples(1000, NULL, on_sample, NULL);
         if(ret < 0)
             return (int)ret;
         total += ret;
